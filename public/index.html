@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electron SQLite3</title>
+    <script src="3.3.5"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="font-mono">
+<div class="flex justify-center items-center w-screen h-screen z-50">
+    <div class="w-[450px] h-[500px] border border-gray-200 rounded-[12px]">
+        <div class="mt-20 ml-32">
+            <button class="connect-database-btn bg-gray-100 px-5 py-2 rounded-full">Connect database</button>
+        </div>
+        <div class="mt-10 ml-36">
+            <button class="create-table-btn bg-gray-100 px-5 py-2 rounded-full">Create Table</button>
+        </div>
+        <div class="mt-10 ml-36">
+            <button class="create-record-btn bg-gray-100 px-5 py-2 rounded-full">Create Record</button>
+        </div>
+        <div class="mt-10 ml-36">
+            <button class="fetch-records-btn bg-gray-100 px-5 py-2 rounded-full">Fetch Records</button>
+        </div>
+        <div class="mt-10 ml-36">
+            <button class="create-tray-btn bg-gray-100 px-5 py-2 rounded-full">Create Tray</button>
+        </div>
+    </div>
+    <div class="overlay hidden absolute border-2 border-black h-screen w-screen bg-[#0000009c] bg-opacity-60"></div>
+    <div class="hidden fixed connect-database-prompt border border-gray-200 p-5 rounded-[12px] bg-white">
+        <div>
+            <label>
+                Database:
+                <input class="db-name-input p-2 border-b border-gray-200" placeholder="Enter db name here" autofocus/>
+            </label>
+        </div>
+        <div class="flex items-center justify-center mt-10">
+            <button class="call-connect-database-api-btn bg-gray-100 px-5 py-2 rounded-full">Connect database</button>
+        </div>
+    </div>
+    <div class="hidden fixed create-table-prompt border border-gray-200 p-5 rounded-[12px] bg-white">
+        <div>
+            <label>
+                Table Name:
+                <input class="table-name-input p-2 border-b border-gray-200" placeholder="Enter table name here" autofocus/>
+            </label>
+        </div>
+        <div class="flex items-center justify-center mt-10">
+            <button class="call-create-table-api-btn bg-gray-100 px-5 py-2 rounded-full">Create table</button>
+        </div>
+    </div>
+    <div class="hidden fixed create-record-prompt border border-gray-200 p-5 rounded-[12px] bg-white">
+        <div>
+            <label>
+                Table Name:
+                <input class="create-record-table-name-input p-2 border-b border-gray-200" placeholder="Enter table name here" autofocus/>
+            </label>
+        </div>
+        <div class="flex items-center justify-center mt-10">
+            <button class="call-create-record-api-btn bg-gray-100 px-5 py-2 rounded-full">Create record</button>
+        </div>
+    </div>
+    <div class="hidden fixed fetch-records-prompt border border-gray-200 p-5 rounded-[12px] bg-white">
+        <div>
+            <label>
+                Table Name:
+                <input class="fetch-records-table-name-input p-2 border-b border-gray-200" placeholder="Enter table name here" autofocus/>
+            </label>
+        </div>
+        <div class="flex items-center justify-center mt-10">
+            <button class="call-fetch-records-api-btn bg-gray-100 px-5 py-2 rounded-full">Fetch records</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

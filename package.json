@@ -1,0 +1,21 @@
+{
+  "name": "electron-sqlite3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:dev": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "electron": "^27.0.3"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6",
+    "typescript": "^5.4.3"
+  }
+}
