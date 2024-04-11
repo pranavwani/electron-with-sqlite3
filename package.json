@@ -1,7 +1,7 @@
 {
   "name": "electron-sqlite3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Electron app with sqlite database support",
   "main": "dist/main.js",
   "scripts": {
     "start": "electron .",
